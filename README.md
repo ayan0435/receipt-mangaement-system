@@ -1,34 +1,35 @@
-# Receipt Generator in C
+# Receipt Management System (GUI)
 
-This is a **C-based Receipt Management System** for managing student fee records. It allows users to add new receipts, view all receipts, search for a specific receipt, update existing receipts, and delete records. Data is stored in a binary file for persistence.
+This project is now a **GUI-based Receipt Management System** built with Python Tkinter. It allows users to add, view, search, update, and delete student fee receipts from a desktop window interface.
 
 ---
 
 ## 📌 Features
 
 - Add new student fee receipt
-- View all stored receipts
-- Search receipt by:
-  - Student Name
-  - Receipt Number
-  - Specific Date, Month or Year
-  - Course
-  - Semester
-  - Mode of Payment (UPI or Cash)
-  - Account Officer Name
-- Update receipt information
-- Delete receipt record
-- Validates date entries
-- Converts numbers to words
-- Capitalizes names and input formatting
+- View all receipts in a table
+- Search by receipt number, date/month/year, student name, course, semester, payment mode, and account officer
+- Update selected receipt
+- Delete selected receipt
+- Validate date and numeric fee fields
+- JSON-based file storage for persistence (`receipt.json`)
 
 ---
 
 ## 💻 Technologies Used
 
-- C Programming Language
-- File Handling (`fopen`, `fread`, `fwrite`)
-- Structures (`struct`)
-- Console-based UI
+- Python 3
+- Tkinter (GUI)
+- JSON file handling
+
+---
+
+## ▶️ Run the GUI
+
+```bash
+python3 receipt_gui.py
+```
+
+The GUI stores data in `receipt.json` in the project directory.
 
 ---
